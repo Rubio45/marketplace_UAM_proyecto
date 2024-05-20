@@ -1,0 +1,118 @@
+/*Header y Footer */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #003459;
+    --secondary-color: #fff;
+    --dark-color: #00a8e8;
+    --third-color: #007ea7;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ededed;
+}
+
+.nav__principal {
+    background-color: var(--primary-color);
+    width: 100%;
+    max-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo {
+    margin: 10px 0px 0 20px;
+    height: 80px;
+}
+h2{
+    color: var(--secondary-color);
+    font-size: 1.8em;
+
+}
+.nav__lista {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.nav__lista__menu {
+    display: inline-block;
+    padding: 10px;
+}
+
+.lista__link, .lista__footer__link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 1s;
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+.btn--crear--usuario{
+    padding: 10px;
+    background-color: var(--dark-color);
+    margin: 0 20px 0 10px;
+    border-radius: 10px;
+    transition-property: color,background-color;
+    transition-duration: 1s;
+}
+.lista__link:hover, .lista__footer__link:hover {
+    cursor: pointer;
+    color: var(--dark-color);
+}
+
+.btn--crear--usuario:hover{
+    background-color: var(--third-color);
+    cursor: pointer;
+}
+
+.btn--crear--usuario:hover > .lista__link{
+    color: var(--secondary-color);
+}
+
+.footer__principal{
+    background-color: var(--primary-color);
+    width: 100%;
+    max-height: 125px;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.footer__encabezado {
+    position: absolute;
+    left: 18%;
+    font-size: 1.8em;
+    color: var(--secondary-color);
+    top: 25%;
+}
+.footer__logo{
+    position: relative;
+}
+.container__lista__footer{
+    display: flex;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.lista__footer{
+    list-style: none;
+    text-align: center;
+}
+h3{
+    margin: 0 0 10px 0;
+    color: var(--secondary-color);
+}
+.lista__footer__item{
+    display: inline-block;
+    padding: 5px;
+}
+
+/*Fin del Header*/
+
